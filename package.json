@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "scripts":{
-    "dev":"next"
+  "scripts": {
+    "dev": "next"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^7.0.1",
+    "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   }

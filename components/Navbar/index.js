@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import './Navbar.scss'
+
 class Navbar extends React.Component{
   constructor(props){
     super()
@@ -18,14 +20,6 @@ class Navbar extends React.Component{
             <a title="About Next JS">About</a>
             </Link>
         </div>
-        <style jsx>{`
-          a {
-            padding: 10px;
-            text-decoration:none;
-            color: green;
-          }
-        `}
-        </style>
       </nav>
     )
   }
