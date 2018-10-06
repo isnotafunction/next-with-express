@@ -12,5 +12,8 @@
     "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5"
   }
 }
