@@ -11,7 +11,19 @@ app
   .then(()=>{
     const server = express()
     const routes = require('./routes/index')
+
     server.use('/api', routes)
+
+    server.get('/about', (req, res) => {
+      const data = ['snotgreenblue', 'pidgeon gray' ]
+      return app.render(req, res, '/about', {data})
+    })
+
+    server.get('/fruit/:slug', (req, res) => {
+      let actualPage = '/fruit'
+      let queryParams = {title: req.params.slug}
+      app.render(req, res, actualPage, queryParams)
+    })
 
     server.get('*', (req, res) => {
       return handle(req, res)

@@ -1,7 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/fruit', (req, res)=>{
+//api/ prefixed
+router.get('/fruitso', (req, res)=>{
   res.end('Grapefruit')
 })
 
